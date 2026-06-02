@@ -51,11 +51,12 @@ via the ST-LINK interface in a single step.  This bypasses DFU mode entirely and
 both images to the external SPI flash using `STM32_Programmer_CLI`:
 
     STM32_Programmer_CLI \
-      -c port=SWD mode=HOTPLUG ap=1 \
-      -el <path-to-cubeprogrammer>/bin/ExternalLoader/MX25UM51245G_STM32N6570-NUCLEO.stldr \
-      -w mboot/build-NUCLEO_N657X0/firmware-trusted.bin 0x70000000 \
-      -w build-NUCLEO_N657X0/firmware.bin 0x70080000 \
-      -hardRst
+        -c port=SWD mode=HOTPLUG ap=1 \
+        -el ${STM32_CUBE_PROGRAMMER}/bin/ExternalLoader/MX25UM51245G_STM32N6570-NUCLEO.stldr \
+        -w mboot/build-NUCLEO_N657X0/firmware-trusted.bin 0x70000000 \
+        -w build-NUCLEO_N657X0/firmware.bin 0x70080000 \
+        -hardRst
+
 
 Adjust `<path-to-cubeprogrammer>` to match the STM32CubeProgrammer installation on
 your system.  The first `-w` programs the trusted mboot image at the start of the

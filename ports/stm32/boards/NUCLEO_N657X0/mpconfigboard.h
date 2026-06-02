@@ -49,6 +49,8 @@
 // I2C buses
 #define MICROPY_HW_I2C1_SCL                     (pyb_pin_I2C1_SCL)
 #define MICROPY_HW_I2C1_SDA                     (pyb_pin_I2C1_SDA)
+#define MICROPY_HW_I2C2_SCL                     (pyb_pin_I2C2_SCL)
+#define MICROPY_HW_I2C2_SDA                     (pyb_pin_I2C2_SDA)
 
 // SPI buses
 #define MICROPY_HW_SPI5_NSS                     (pyb_pin_SPI5_CS)
