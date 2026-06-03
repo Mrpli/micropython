@@ -25,16 +25,6 @@
 #define MICROPY_HW_CLK_PLLP2                    (1)
 #define MICROPY_HW_CLK_PLLFRAC                  (0)
 
-// PLL3 for LTDC: HSE(48MHz)/6*47/1 = 376MHz → PLL3R(÷1)=376 → IC16(÷12) → 31.33MHz
-#define MICROPY_HW_CLK_PLL3M                    (6)
-#define MICROPY_HW_CLK_PLL3N                    (47)
-#define MICROPY_HW_CLK_PLL3P                    (1)
-#define MICROPY_HW_CLK_PLL3Q                    (1)
-#define MICROPY_HW_CLK_PLL3R                    (1)
-#define MICROPY_HW_CLK_PLL3VCI                  (RCC_PLL3VCIRANGE_1)
-#define MICROPY_HW_CLK_PLL3VCO                  (RCC_PLL3VCOWIDE)
-#define MICROPY_HW_CLK_PLL3FRAC                 (0)
-
 // The LSE is a 32kHz crystal.
 #define MICROPY_HW_RTC_USE_LSE                  (1)
 #define MICROPY_HW_RTC_USE_US                   (1)
