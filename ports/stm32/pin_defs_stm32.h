@@ -27,6 +27,8 @@
 // This file contains pin definitions that are specific to the stm32 port.
 // This file should only ever be #included by pin.h and not directly.
 
+// NOTE(2026-06): I,J,K,L,M removed — no STM32 chip uses these ports.
+// STM32N6, H7, and other modern families skip I-M and use N, O, P, Q.
 enum {
     PORT_A,
     PORT_B,
@@ -36,13 +38,10 @@ enum {
     PORT_F,
     PORT_G,
     PORT_H,
-    PORT_I,
-    PORT_J,
-    PORT_K,
-    PORT_L,
-    PORT_M,
     PORT_N,
     PORT_O,
+    PORT_P,
+    PORT_Q,
 };
 
 // Must have matching entries in SUPPORTED_FN in boards/make-pins.py
