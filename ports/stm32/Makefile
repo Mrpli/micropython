@@ -381,6 +381,9 @@ HAL_SRC_C += $(addprefix $(STM32LIB_HAL_BASE)/Src/stm32$(MCU_SERIES)xx_,\
 	hal_i2c_ex.c \
 	hal_rif.c \
 	hal_xspi.c \
+	hal_ltdc.c \
+	hal_ltdc_ex.c \
+	hal_dma2d.c \
 	)
 endif
 

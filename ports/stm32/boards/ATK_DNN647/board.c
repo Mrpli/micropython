@@ -27,6 +27,10 @@
 #include "py/mphal.h"
 #include "boardctrl.h"
 #include "xspi.h"
+#include <stm32n6xx_hal_rcc.h>
+#include <stm32n647xx.h>
+#include <stm32n6xx_ll_pwr.h>
+#include <stm32n6xx_ll_bus.h>
 
 // Values for OTP fuses for VDDIO3, to select low voltage mode (<2.5V).
 // See RM0486, Section 5, Table 18.
